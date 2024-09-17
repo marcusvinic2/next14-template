@@ -47,15 +47,13 @@ axiosInstance.interceptors.response.use(
   },
   async (error) => {
     if (error.response.status === 401) {
-      //irá direcionar para login quando receber status 401
+      //error status 401
 
       try {
+        // refresh token
         await clientMiddleware();
       } catch (error) {
-        deleteCookie(localStorageKey.user_token);
-        deleteCookie(localStorageKey.refresh_token);
-        deleteCookie(localStorageKey.user_public);
-        window.location.href = '/login?acao=login';
+        // actions erros
       }
     }
 

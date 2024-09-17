@@ -1,9 +1,4 @@
 import React, { ReactNode, useEffect, useState } from 'react';
-
-import { CartContextProvider } from './useCart';
-import { ModalConextProvider } from './useModal';
-import { ProductContextProvider } from './useProduct';
-import { TemplateContextProvider } from './useTemplate';
 import { UserContextProvider } from './useUser';
 
 interface iContextProvider {
@@ -21,15 +16,9 @@ export const ContextProvider: React.FC<iContextProvider> = ({
 
   return (
     <>
-      <ModalConextProvider>
         <UserContextProvider>
-          <TemplateContextProvider>
-            <CartContextProvider>
-              <ProductContextProvider>{children}</ProductContextProvider>
-            </CartContextProvider>
-          </TemplateContextProvider>
+          {children}
         </UserContextProvider>
-      </ModalConextProvider>
     </>
   );
 };
