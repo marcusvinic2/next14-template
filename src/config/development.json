@@ -1,0 +1,22 @@
+{
+  "url": "",
+  "name": "HOMOLOGAÇÃO",
+  "site_name": "HOMOLOGAÇÃO",
+  "locale": "pt-BR",
+  "description": "HOMOLOGAÇÃO",
+  "revalidate": false,
+  "api_next": "http://localhost:3000/api",
+  "api_service": "",
+  "temp_revalidate": "",
+  "fb_pixel": [""],
+  "generator": "@mmarcus.silva",
+  "organization_guidkey": "",
+  "recaptcha_sitekey" : "",
+  "recaptcha_secretkey" : "",
+  "instagram_link": "",
+  "facebook_link": "",
+  "youtube_link": "",
+  "whatsapp_link": "",
+  "android_app": "",
+  "ios_app": ""
+}
